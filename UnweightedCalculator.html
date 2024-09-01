@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<title>Unweighted Calculator (Middleton High School)</title>
+	<!-- =================== META =================== -->
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="assets/img/logo2.png">
+	<!-- =================== STYLE =================== -->
+	<link rel="stylesheet" href="assets/css/ChatbotStyle.css">
+	<link rel="stylesheet" href="assets/css/slick.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Google Fonts Link For Icons -->
+	<link rel="stylesheet"type="text/css" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+</style>
+<body id="home" class="page-calculator">
+	<!--================ PRELOADER ================-->
+	<div class="preloader-cover">
+		<div id="cube-loader">
+			<div class="caption">
+				<div class="cube-loader">
+					<div class="cube loader-1"></div>
+					<div class="cube loader-2"></div>
+					<div class="cube loader-4"></div>
+					<div class="cube loader-3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--============== PRELOADER END ==============-->
+	
+<!-- ================= HEADER ================= -->
+<!-- Start of header section -->
+<header class="header-home">
+	<!-- Navigation button -->
+	<a href="#" class="nav-btn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+	<!-- Top panel -->
+	<div class="top-panel">
+		<div class="container">
+			<div class="row top-panel-row">
+				<!-- Left section of the top panel -->
+				<div class="col-sm-4 top-panel-left">
+					<ul class="header-cont">
+						<!-- Address -->
+						<li><i class="fa fa-map-marker" aria-hidden="true"></i><a>4801 N 22nd St Tampa, FL 33610</a></li>
+					</ul>
+				</div>
+				<!-- Center section of the top panel -->
+				<div class="col-sm-4 top-panel-center">
+					<ul class="header-cont">
+						<!-- Availability Timings -->
+						<li><i class="fa fa-clock-o" aria-hidden="true"></i>Open Sun - Sat: 8:00AM - 7:00PM</li>
+					</ul>
+				</div>
+				<!-- Right section of the top panel -->
+				<div class="col-sm-4 top-panel-right">
+					<ul class="header-cont">
+						<!-- Phone Number -->
+						<li><i class="fa fa-phone" aria-hidden="true"></i><a>813-233-3360</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Header menu -->
+	<div class="header-menu">
+		<div class="container">
+			<!-- Logo -->
+			<div class="header-logo">
+				<a href="home.html" class="logo"><img src="assets/img/logo.png" alt="logo"></a>
+			</div>
+			<!-- Navigation Controls -->
+			<nav class="nav-menu">
+				<ul class="nav-list">
+					<!-- Home -->
+					<li><a href="home.html">Home</a></li>
+					<!-- Calculators Dropdown -->
+					<li class="dropdown">
+						<a>Calculators <i class="fa fa-caret-down"></i></a>
+						<ul>
+							<li><a href="WeightedCalculator.html">Middleton Weighted Calculator</a></li>
+							<li class="menu-active"><a href="UnweightedCalculator.html">Middleton Unweighted Calculator</a></li>
+							<li><a href="CollegeCalculator.html">College Calculator</a></li>
+						</ul>
+					</li>
+					<!-- End of Calculators Dropdown -->
+					<!-- Services -->
+					<li><a href="services.html">Services</a></li>
+					<!-- News -->
+					<li><a href="news.html">News</a></li>
+					<!-- Contacts -->
+					<li><a href="contacts.html">Contacts</a></li>
+					<!-- Sign up and Sign in pages -->
+					<li><a href="SignIn.html">Sign In</a></li>
+                    <li><a href="SignUp.html">Sign Up</a></li>
+					<!-- Copyright Page -->
+					<li><a href="copyright.html">Copyright Info</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<!-- =============== HEADER END =============== -->
+
+	<!-- ============ SLIDER ============ -->
+	<section class="s-slider">
+		<div class="slider-navigation">
+			<div class="container">
+				<div class="slider-navigation-cover"></div>
+			</div>
+		</div>
+		<div class="slider">
+			<div class="calculator-slide">
+				<div class="slider-effect">
+					<div data-hover-only="true" class="scene">
+						<span class="scene-item" data-depth="0.4" style="background-image: url(assets/img/effect-1-1.svg);"></span>
+					</div>
+				</div>
+				<div class="slide-img-cover">
+					<div data-hover-only="true" class="scene">
+						<img class="slide-img" data-depth="0.2" src="assets/img/Calculator.jpeg" alt="img">
+					</div>
+				</div>
+				<div class="container">
+					<img class="slide-img-effect" src="assets/img/slider-square.svg" alt="img">
+					<div class="text-bg">calculator</div>
+					<div class="calculator-slide-cover">
+						<h2 class="title">GPA: <span>Unweighted</span></h2>
+					</div>
+				</div>
+			</div>
+	</section>
+
+
+
+	<!-- ============== Instructions ============== -->
+	<section class="s-best-title calculator-best-title">
+		<span class="section-title-bg">INSTRUCTIONS</span>
+		<div class="container">
+			<h2 class="title-decor">Instructions: <span>How to use</span></h2>
+			<p class="slogan">Please select the class you are taking and the grade you recived in that class using the dropdowns. To add a class press add a class. In the table it will show the name of the class you took and the numerical value associated with it. When you press calculate GPA your unweighted GPA will be calculated!</p>
+</div>
+</section>
+
+
+<!-- ============== Drop Downs ============== -->
+  <style>
+    /* Center align the container */
+	body
+
+/* Style elements and buttons */
+#inputSection label,
+#inputSection input,
+#inputSection select,
+#inputSection button {
+	font-size: 18px; /* Increased font size for elements */
+	margin-bottom: 15px; /* Increased margin */
+}
+.align {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin-top: 50px;
+}
+
+/* Align text and select elements horizontally */
+.alignText {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.alignText label,
+.alignText select {
+margin-right: 10px;
+}
+	.container1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    /* Align text and select elements horizontally */
+    .classInput {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .classInput label,
+    .classInput select {
+      margin-right: 10px;
+    }
+
+    .container1 .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .container1 button {
+      height: 35px;
+      width: 150px;
+      background-color: #ff1a1a;
+      border-color: #ff1a1a;
+      color: white;
+      margin-right: 5px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+  <div class="container1">
+    <div id="classInputs">
+      <div class="classInput">
+        <label for="className"><h4>Select Class:</h4></label>
+		<input type="text" size="10" id="className" required>
+
+        <label for="gradeSelect"><h4>Select Grade:</h4></label>
+        <select id="gradeSelect">
+          <!-- Grades here -->
+          <option value="4.0">A</option>
+          <option value="3.0">B</option>
+          <option value="2.0">C</option>
+          <option value="1.0">D</option>
+          <option value="0.0">F</option>
+        </select>
+        <button onclick="addRow()">Add Grade</button>
+      </div>
+    </div>
+
+	<div class="buttons">
+		<button onclick="calculateUnweighted()">Calculate GPA</button>
+		<button onclick="resetTable()">Reset</button>
+		<button id="button">Print</button>
+		<button onclick="exportTableToExcel('table', 'members-data')">Export To Excel</button>
+	</div>
+    <table id="table" border="1"  style="width:70%;border-collapse: collapse;text-align: center;">
+<caption><h3>Unweighted GPA Calculator</h3></caption>
+      <tr>
+        <th><b>Class</b></th>
+        <th><b>Grade</b></th>
+      </tr>
+     	
+    </table>
+
+
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+
+
+var totalUnweightedGPA =0;
+
+//Export to excel 
+function exportTableToExcel(tableID, filename = ''){
+    var downloadLink;
+    var dataType = 'application/vnd.ms-excel';
+    var tableSelect = document.getElementById(tableID);
+    var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+    filename = filename?filename+'.xls':'excel_data.xls';
+   
+    // Create download link element
+    downloadLink = document.createElement("a");
+   
+    document.body.appendChild(downloadLink);
+   
+
+    if(navigator.msSaveOrOpenBlob){
+        var blob = new Blob(['\ufeff', tableHTML], {
+            type: dataType
+        });
+        navigator.msSaveOrOpenBlob( blob, filename);
+    }else{
+        // Create a link to the file
+        downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+   
+        // Setting the file name
+        downloadLink.download = filename;
+       
+        //triggering the function
+        downloadLink.click();
+    }
+
+}
+// Added Print Button
+   function printData()
+    {
+      
+        var divToPrint=document.getElementById("table");
+        newWin= window.open();
+		var gaptotal= document.getElementById('result').textContent;
+		var str="";
+     	newWin.document.write(divToPrint.outerHTML);
+		newWin.document.write('<br> <br><table> <tr> <td> '+ gaptotal +' </td></tr></table>');
+		newWin.document.close();
+        newWin.print();   
+    }
+
+
+    document.querySelector("#button").addEventListener("click", function(){
+      printData();
+    });
+	// End of print button
+
+
+  function addRow() {
+    const classInput = document.getElementById('className').value;
+    const gradeInput = document.getElementById('gradeSelect').value;
+
+
+    const table = document.getElementById('table');
+    const newRow = table.insertRow(-1);
+
+    const cell1 = newRow.insertCell(0);
+    const cell2 = newRow.insertCell(1);
+
+    cell1.innerHTML = classInput;
+    cell2.innerHTML = gradeInput;
+  }
+
+function calculateUnweighted() {
+  const tableRows = document.querySelectorAll('#table tr:not(:first-child)'); // Select all table rows except the header
+
+  let totalGPA = 0; // Initialize a variable to store the sum of selected grades
+  let numberOfGrades = 0; // Initialize a variable to count the number of selected grades
+
+  // Loop through each table row
+  tableRows.forEach((row) => {
+    // Get the cell in the second column of the current row (index 1)
+    const gradeCell = row.cells[1];
+    const selectedGrade = parseFloat(gradeCell.textContent);
+
+    // Check if the retrieved value is a valid number (not NaN)
+    if (!isNaN(selectedGrade)) {
+      totalGPA += selectedGrade; // Add the selected grade to the total GPA
+      numberOfGrades++; // Increment the count of selected grades
+    }
+  });
+
+  // Check if no grades were selected (if numberOfGrades is 0)
+  if (numberOfGrades === 0) {
+    document.getElementById('result').textContent = 'Please add grades.'; // Display an error message
+    return; // Exit the function early
+  }
+
+  // Calculate the unweighted GPA by dividing the total GPA by the number of selected grades
+  const unweightedGPA = totalGPA / numberOfGrades;
+
+  // Display the calculated unweighted GPA in the 'result' element with two decimal places
+  document.getElementById('result').textContent = `Your unweighted GPA is: ${unweightedGPA.toFixed(2)}`;
+  
+  totalUnweightedGPA = unweightedGPA.toFixed(2);
+}
+
+
+
+  function resetTable() {
+    document.getElementById('table').innerHTML = '<caption><h3>Unweighted GPA Calculator</h3></caption><tr><th>Class</th><th>Grade</th></tr>';
+    document.getElementById('result').textContent = '';
+  }
+
+  </script>
+<!-- ============== What is Unweighted GPA ============== -->
+
+<section class="s-about">
+		<div class="container">
+			<img class="about-effect-tringle" src="assets/img/tringle-about-top.svg" alt="img">
+			<div class="row about-row">
+				<div class="col-md-5 about-img-col">
+					<div class="about-img-cover">
+						<div class="about-img-1">
+							<img class="about-img-effect-2" src="assets/img/group-circle-2.svg" alt="img">
+							<img src="assets/img/UnweightedChart.png" alt="Unweighted grade conversion chart.">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7 about-info-cover">
+					<h2 class="title-decor">What is <span>Unweighted GPA</span></h2>
+					<div class="text">
+						<p>The Unweighted GPA calculation involves converting each received letter grade into its corresponding numerical value and then taking the average of those values. This process does not consider the class's difficulty level, focusing solely on the achieved letter grades. Therefore, a higher Unweighted GPA indicates consistent academic effort and success across different subjects, demonstrating a commitment to academic excellence and the ability to handle college-level coursework. Admissions officers often use the Unweighted GPA as a significant indicator of a student's dedication to academics and their potential to excel in higher education.</p>
+					</div>
+					<a href="https://www.albert.io/blog/how-do-you-calculate-your-unweighted-gpa/" target="_blank" class="btn">read more</a>
+				</div>
+			</div>
+		</div>
+	</section>				
+<!-- ================== FOOTER ================== -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-lg-3 footer-item-logo">
+				<a href="home.html" class="logo-footer"><img src="assets/img/logo.png" alt="logo"></a>
+				<p>GPA Pilot: Your ticket to academic success.</p> <!-- Footer logo and description -->
+			</div>
+			<div class="col-sm-6 col-lg-3 footer-item footer-item-list">
+				<h3>Emails</h3> <!-- Section title -->
+				<ul class="footer-link">
+					<li><a>Tejaswi Mittadoddi Personal Email: mtejas118@gmail.com</a></li> 
+					<li><a>Saket Bonu Personal Email: bonusaket@gmail.com</a></li>
+					<li><a>Rhea Rachala Personal Email: rhearachala@gmail.com</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6 col-lg-3 footer-item">
+				<h3>Contact us</h3> <!-- Section title -->
+				<ul class="footer-cont">
+					<li><i class="fa fa-phone" aria-hidden="true"></i><a>813-233-3360</a></li> <!-- Contact phone number -->
+					<li><i class="fa fa-envelope" aria-hidden="true"></i><a target="_blank" >gpapilot2024@gmail.com</a></li> <!-- Contact email -->
+					<li><i class="fa fa-map-marker" aria-hidden="true"></i><a>4801 N 22nd St Tampa, FL 33610</a></li> <!-- Contact address -->
+				</ul>
+			</div>
+			<div class="col-sm-6 col-lg-3 footer-item">
+				<h3>Zoom</h3> <!-- Section title -->
+				<ul class="footer-blog">
+					<li>
+						<a class="img-cover"><img src="assets/img/Zoom-Icon.png" alt="zoom"></a> <!-- Zoom link with image -->
+						<div class="footer-blog-info">
+							<div class="name">Zoom Meeting</div> <!-- Link text and destination -->
+							<p>Meeting ID: 837 3115 9435 <br> Passcode: SQVT3X</p> <!-- Description -->
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="copyright">GPA Pilot</a> © 2024. GPA Pilot. All Rights Reserved.</div> <!-- Copyright text -->
+			<nav class="foot-menu">
+				<ul class="foot-list">
+					<li><a href="home.html">Home</a></li> <!-- Footer navigation links -->
+					<li class="dropdown">
+						<a>Calculators <i class="fa fa-caret-up"></i></a> <!-- Dropdown menu -->
+						<ul>
+							<li><a href="WeightedCalculator.html">Middleton Weighted Calculator</a></li> <!-- Submenu items -->
+							<li class="menu-active"><a href="UnweightedCalculator.html">Middleton Unweighted Calculator</a></li>
+							<li><a href="CollegeCalculator.html">College Calculator</a></li>
+						</ul>
+					</li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+					<li><a href="SignIn.html">Sign In</a></li>
+					<li><a href="SignUp.html">Sign Up</a></li>
+					<li><a href="copyright.html">Copyright Info</a> <!-- Additional footer navigation link -->
+				</ul>
+			</nav>
+		</div>
+	</div>
+</footer>
+<!-- ================ FOOTER END ================ -->
+
+	<!-- ================ GPA PILOT AI START================ -->
+    <button class="chatbot-toggler">
+	<span class="material-symbols-outlined">CHAT BOT</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>GPA Pilot AI</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span height="100px" > <img src="assets/img/chatimage.jpg" alt="your-image-alt-text"></span>
+          <p>Hi there, I am GPA Pilot AI.<br>How can I help you today?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+	<!-- ================ GPA PILOT AI END ================ -->
+
+	<!--=================== SCRIPT	===================-->
+	<script src="assets/js/ChatbotScript.js"></script>
+	<script src="assets/js/jquery-2.2.4.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/isotope.pkgd.js"></script>
+	<script src="assets/js/jquery.fancybox.js"></script>
+	<script src="assets/js/rx-lazy.js"></script>
+	<script src="assets/js/parallax.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<title>College Calculator</title>
+	<!-- =================== META =================== -->
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="assets/img/logo2.png">
+	<!-- =================== STYLE =================== -->
+	<link rel="stylesheet" href="assets/css/ChatbotStyle.css">
+	<link rel="stylesheet" href="assets/css/slick.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Google Fonts Link For Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<script>
+	$("#print").click(function() { window.print(); });
+	</script>
+	<style>
+	@media print{
+	  .container1, .classInput, .classInputs, .classSelect, .gradeSelect, .table, .buttons, .gpa { 
+		display: none;
+	  }
+	}
+	</style>
+<body id="home" class="page-calculator">
+	<!--================ PRELOADER ================-->
+	<div class="preloader-cover">
+		<div id="cube-loader">
+			<div class="caption">
+				<div class="cube-loader">
+					<div class="cube loader-1"></div>
+					<div class="cube loader-2"></div>
+					<div class="cube loader-4"></div>
+					<div class="cube loader-3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--============== PRELOADER END ==============-->
+	
+<!-- ================= HEADER ================= -->
+<!-- Start of header section -->
+<header class="header-home">
+	<!-- Navigation button -->
+	<a href="#" class="nav-btn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+	<!-- Top panel -->
+	<div class="top-panel">
+		<div class="container">
+			<div class="row top-panel-row">
+				<!-- Left section of the top panel -->
+				<div class="col-sm-4 top-panel-left">
+					<ul class="header-cont">
+						<!-- Address -->
+						<li><i class="fa fa-map-marker" aria-hidden="true"></i><a>4801 N 22nd St Tampa, FL 33610</a></li>
+					</ul>
+				</div>
+				<!-- Center section of the top panel -->
+				<div class="col-sm-4 top-panel-center">
+					<ul class="header-cont">
+						<!-- Availability Timings -->
+						<li><i class="fa fa-clock-o" aria-hidden="true"></i>Open Sun - Sat: 8:00AM - 7:00PM</li>
+					</ul>
+				</div>
+				<!-- Right section of the top panel -->
+				<div class="col-sm-4 top-panel-right">
+					<ul class="header-cont">
+						<!-- Phone Number -->
+						<li><i class="fa fa-phone" aria-hidden="true"></i><a>813-233-3360</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Header menu -->
+	<div class="header-menu">
+		<div class="container">
+			<!-- Logo -->
+			<div class="header-logo">
+				<a href="home.html" class="logo"><img src="assets/img/logo.png" alt="logo"></a>
+			</div>
+			<!-- Navigation Controls -->
+			<nav class="nav-menu">
+				<ul class="nav-list">
+					<!-- Home -->
+					<li><a href="home.html">Home</a></li>
+					<!-- Calculators Dropdown -->
+					<li class="dropdown">
+						<a>Calculators <i class="fa fa-caret-down"></i></a>
+						<ul>
+							<li><a href="WeightedCalculator.html">Middleton Weighted Calculator</a></li>
+							<li><a href="UnweightedCalculator.html">Middleton Unweighted Calculator</a></li>
+							<li class="menu-active"><a href="CollegeCalculator.html">College Calculator</a></li>
+						</ul>
+					</li>
+					<!-- End of Calculators Dropdown -->
+					<!-- Services -->
+					<li><a href="services.html">Services</a></li>
+					<!-- News -->
+					<li><a href="news.html">News</a></li>
+					<!-- Contacts -->
+					<li><a href="contacts.html">Contacts</a></li>
+					<!-- Sign up and Sign in pages -->
+					<li><a href="SignIn.html">Sign In</a></li>
+                    <li><a href="SignUp.html">Sign Up</a></li>
+					<!-- Copyright Page -->
+					<li><a href="copyright.html">Copyright Info</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<!-- =============== HEADER END =============== -->
+
+<!-- ============ Title Page ============ -->
+<!-- Start of title page section -->
+<section class="s-slider">
+	<!-- Slider navigation -->
+	<div class="slider-navigation">
+		<div class="container">
+			<div class="slider-navigation-cover"></div>
+		</div>
+	</div>
+	<div class="slider">
+		<div class="calculator-slide">
+			<div class="slider-effect">
+				<div data-hover-only="true" class="scene">
+					<span class="scene-item" data-depth="0.4" style="background-image: url(assets/img/effect-1-1.svg);"></span>
+				</div>
+			</div>
+			<div class="slide-img-cover">
+				<div data-hover-only="true" class="scene">
+					<img class="slide-img" data-depth="0.2" src="assets/img/college.png" alt="Building">
+				</div>
+			</div>
+			<div class="container">
+				<img class="slide-img-effect" src="assets/img/slider-square.svg" alt="img">
+				<div class="text-bg">calculator</div>
+				<div class="calculator-slide-cover">
+					<h2 class="title">College <span>Calculator</span></h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ============== Instructions ============== -->
+<!-- Start of instructions section -->
+<section class="s-best-title calculator-best-title">
+	<span class="section-title-bg">INSTRUCTIONS</span>
+	<div class="container">
+		<h2 class="title-decor">Instructions: <span>How to use</span></h2>
+		<p class="slogan">This is specifically created for students in college in general, you school might do it differently so please be cautious. To use the calculator: Type in the name of the class you are taking and the grade you received in that class and the credit hours using the dropdowns. To add the class to the table press add class. In the table it will show the name of the class you took, the grade you received, the corresponding grade points, credit hours and the total points for that class. At the bottom of the chart your GPA will show, it will be updating as you add values to the chart.</p>
+	</div>
+</section>
+
+
+
+<!-- ============ Chart ============ -->
+<!-- This section contains the chart for the GPA calculator -->
+
+<head>
+    <style>
+        body
+
+        /* Style elements and buttons */
+        /* Styling for various elements like labels, inputs, selects, and buttons */
+        #inputSection label,
+        #inputSection input,
+        #inputSection select,
+        #inputSection button {
+            font-size: 18px; /* Increased font size for elements */
+            margin-bottom: 15px; /* Increased margin */
+        }
+        /* Align elements in the center vertically and horizontally */
+        .align {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px; /* Top margin */
+        }
+
+        /* Align text and select elements horizontally */
+        .alignText {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px; /* Bottom margin */
+        }
+
+        /* Style for buttons */
+        .align .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px; /* Top margin */
+        }
+
+        /* Style for individual buttons */
+        .align button {
+            height: 35px; /* Button height */
+            width: 150px; /* Button width */
+            background-color: #ff1a1a; /* Button background color */
+            border-color: #ff1a1a; /* Button border color */
+            color: white; /* Button text color */
+            margin-right: 5px; /* Margin between buttons */
+        }
+
+        /* Style for table */
+        /* Styling for the table */
+        table {
+            border-collapse: collapse; /* Collapse border spacing */
+            width: 70%; /* Table width */
+            margin-bottom: 20px; /* Bottom margin */
+        }
+
+        /* Style for table header and data cells */
+        th, td {
+            border: 1px solid #dddddd; /* Border style */
+            text-align: left; /* Text alignment */
+            padding: 8px; /* Padding */
+        }
+
+        /* Style for table header */
+        th {
+            background-color: #f2f2f2; /* Background color */
+        }
+
+        /* Style for GPA text */
+        /* Styling for GPA text */
+        #gpa {
+            font-size: 22px; /* Increased font size for GPA text */
+            font-weight: bold; /* Bold font weight */
+        }
+
+        /* Style for buttons */
+        /* Styling for buttons with a red background */
+        .buttonRED {
+            background-color: #f44336; /* Button background color */
+            color: white; /* Button text color */
+            border: 2px solid #f44336; /* Border style */
+        }
+
+        /* Hover effect for buttons */
+        /* Hover effect for buttons with red background */
+        .buttonRED:hover {
+            background-color: white; /* Button background color on hover */
+            color: black; /* Button text color on hover */
+            border: 2px solid #f44336; /* Border style on hover */
+        }
+    </style>
+</head>
+<!-- End of header section -->
+
+<body>
+    <!-- Main content section -->
+    <div class="align">
+
+        <!-- Input section containing form elements -->
+        <div id="inputSection">
+            <div class="alignText">
+                <!-- Input for class name -->
+                <label for="className"><h4>Class Name:</h4></label>
+                <input type="text" size="10" id="className" required>
+                
+                <!-- Dropdown for selecting grade -->
+                <label for="grade"><h4>Select Grade:</h4></label>
+                <select id="grade" required>
+                    <option value="4">A</option>
+                    <option value="3">B</option>
+                    <option value="2">C</option>
+                    <option value="1">D</option>
+                    <option value="0">F</option>
+                </select>
+
+                <!-- Dropdown for selecting credit hours -->
+                <label for="creditHours"><h4>Credit Hours:</h4></label>
+                <select id="creditHours" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <!-- Buttons for adding class, resetting, and printing -->
+            <button type="button" class="button buttonRED" onclick="addClass()">Add Class</button>
+            <button type="button" class="button buttonRED" onclick="resetChart()">Reset</button>
+            <!-- Additional button for printing -->
+            <button id="button">Print</button>
+			<button onclick="exportTableToExcel('chart', 'members-data')">Export To Excel</button>
+        </div>
+        <br><br>
+
+        <!-- Table displaying class information -->
+        <table id="chart" border="1">
+            <caption><h3>College GPA Calculator</h3></caption> <!-- Caption for the table -->
+            <!-- Table headers -->
+            <tr>
+                <th>Class Name</th>
+                <th>Grade</th>
+                <th>Grade Points</th>
+                <th>Credit Hours</th>
+                <th>Total Points</th>
+            </tr>
+        </table>
+        <br>
+
+        <!-- Displaying GPA -->
+        <div>
+            
+            <span id="gpa">0.00</span> <!-- Initial GPA value -->
+        </div>
+    </div>
+</body>
+
+
+
+<!-- ============ JavaScript ============ -->
+<script>
+	var totalUnweightedGPA =0;
+//Export to excel 
+function exportTableToExcel(tableID, filename = ''){
+    var downloadLink;
+    var dataType = 'application/vnd.ms-excel';
+    var tableSelect = document.getElementById(tableID);
+    var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+    filename = filename?filename+'.xls':'excel_data.xls';
+   
+    // Create download link element
+    downloadLink = document.createElement("a");
+   
+    document.body.appendChild(downloadLink);
+   
+
+    if(navigator.msSaveOrOpenBlob){
+        var blob = new Blob(['\ufeff', tableHTML], {
+            type: dataType
+        });
+        navigator.msSaveOrOpenBlob( blob, filename);
+    }else{
+        // Create a link to the file
+        downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+   
+        // Setting the file name
+        downloadLink.download = filename;
+       
+        //triggering the function
+        downloadLink.click();
+    }
+
+}
+	// Function to print data
+	function printData() {
+		var divToPrint = document.getElementById("chart"); // Get the chart element
+		newWin = window.open(); // Open a new window
+		var gaptotal = document.getElementById('gpa').textContent; // Get the total GPA
+		var str = "";
+		newWin.document.write(divToPrint.outerHTML); // Write the chart HTML to the new window
+		newWin.document.write('<br> <br><table> <tr> <td> ' + gaptotal + ' </td></tr></table>'); // Write the GPA to the new window
+		newWin.document.close(); // Close the document
+		newWin.print(); // Print the window content
+	}
+	
+	// Event listener for print button
+	document.querySelector("#button").addEventListener("click", function(){
+	   printData();
+	 });
+	
+	// Array to store class details
+	let classes = [];
+	let totalPoints = 0;
+	let totalCreditHours = 0;
+	
+	// Function to add a class
+	function addClass() {
+		// Get values from input fields
+		const className = document.getElementById('className').value;
+		const grade = parseInt(document.getElementById('grade').value);
+		const creditHours = parseInt(document.getElementById('creditHours').value);
+	
+		// Calculate total points for the class
+		const totalCoursePoints = grade * creditHours; // Use grade directly for total points
+	
+		// Store class details in the array
+		classes.push({
+			className: className,
+			grade: grade,
+			creditHours: creditHours,
+			totalCoursePoints: totalCoursePoints
+		});
+	
+		// Update total points and credit hours
+		totalPoints += totalCoursePoints;
+		totalCreditHours += creditHours;
+	
+		// Update the display
+		displayChart();
+		calculateGPA();
+	}
+	
+	// Function to display class details in the table
+	function displayChart() {
+		const chart = document.getElementById('chart');
+		chart.innerHTML = `
+			<tr>
+				<th>Class Name</th>
+				<th>Grade</th>
+				<th>Grade Points</th>
+				<th>Credit Hours</th>
+				<th>Total Points</th>
+			</tr>
+		`;
+	
+		classes.forEach(course => {
+			// Generate table rows for each class
+			const row = `
+				<tr>
+					<td>${course.className}</td>
+					<td>${getGradeLetter(course.grade)}</td>
+					<td>${getGradePoints(course.grade)}</td>
+					<td>${course.creditHours}</td>
+					<td>${course.totalCoursePoints}</td>
+				</tr>
+			`;
+			chart.innerHTML += row;
+		});
+	}
+	
+	// Function to get the grade letter
+	function getGradeLetter(grade) {
+		const gradeMap = { 4: 'A', 3: 'B', 2: 'C', 1: 'D', 0: 'F' };
+		return gradeMap[grade];
+	}
+	
+	// Function to get grade points
+	function getGradePoints(grade) {
+		const gradeMap = { 4: 'A (4)', 3: 'B (3)', 2: 'C (2)', 1: 'D (1)', 0: 'F (0)' };
+		return gradeMap[grade];
+	}
+	
+	// Function to reset the chart and values
+	function resetChart() {
+		classes = [];
+		totalPoints = 0;
+		totalCreditHours = 0;
+	
+		// Reset the chart display and GPA
+		displayChart();
+		document.getElementById('gpa').textContent = '0.00';
+	}
+	
+	// Function to calculate GPA
+	function calculateGPA() {
+		// Calculate GPA and display it
+		const gpa = totalPoints / totalCreditHours || 0;
+		document.getElementById('gpa').textContent = `Your college GPA is: ${gpa.toFixed(2)}`;
+	}
+	
+	</script>
+	</body>
+	<!-- ============ Chart End ============ -->
+	
+<!-- ============== What is College GPA ============== -->
+
+<section class="s-about">
+		<div class="container">
+			<img class="about-effect-tringle" src="assets/img/tringle-about-top.svg" alt="img">
+			<div class="row about-row">
+				<div class="col-md-5 about-img-col">
+					<div class="about-img-cover">
+						<div class="about-img-1">
+							<img class="about-img-effect-1" src="assets/img/square-yellow.svg" alt="img">
+							<img class="about-img-effect-2" src="assets/img/group-circle-2.svg" alt="img">
+							<img src="assets/img/GPA-IMG.jpeg" alt="GPA image">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7 about-info-cover">
+					<h2 class="title-decor">What is <span>College GPA</span></h2>
+					<div class="text">
+						<p>This calculator only provides the weighted college calculation unweighted stays the same in both college and high school.A college GPA is a numeric summary of a student's academic performance in college. It's derived by converting letter grades or percentages to numerical values, then averaging them for an overall score.
+
+Grades are often assigned numerical equivalents (e.g., A = 4.0, B = 3.0). Each course's grade is multiplied by its credit hours to obtain grade points. The sum of grade points across all courses is divided by the total credit hours to determine the GPA.
+
+GPA scales typically range from 0.0 to 4.0 or 5.0, varying by institution. A higher GPA reflects stronger academic performance. Colleges use GPA for admissions, scholarships, and evaluating a student's progress.
+ </p>
+					</div>
+					<a href="https://www.indeed.com/career-advice/career-development/how-to-calculate-college-gpa" target="_blank" class="btn">read more</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- ================== FOOTER ================== -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-lg-3 footer-item-logo">
+				<a href="home.html" class="logo-footer"><img src="assets/img/logo.png" alt="logo"></a>
+				<p>GPA Pilot: Your ticket to academic success.</p> <!-- Footer logo and description -->
+			</div>
+			<div class="col-sm-6 col-lg-3 footer-item footer-item-list">
+				<h3>Emails</h3> <!-- Section title -->
+				<ul class="footer-link">
+					<li><a>Tejaswi Mittadoddi Personal Email: mtejas118@gmail.com</a></li> 
+					<li><a>Saket Bonu Personal Email: bonusaket@gmail.com</a></li>
+					<li><a>Rhea Rachala Personal Email: rhearachala@gmail.com</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6 col-lg-3 footer-item">
+				<h3>Contact us</h3> <!-- Section title -->
+				<ul class="footer-cont">
+					<li><i class="fa fa-phone" aria-hidden="true"></i><a>813-233-3360</a></li> <!-- Contact phone number -->
+					<li><i class="fa fa-envelope" aria-hidden="true"></i><a target="_blank" >gpapilot2024@gmail.com</a></li> <!-- Contact email -->
+					<li><i class="fa fa-map-marker" aria-hidden="true"></i><a>4801 N 22nd St Tampa, FL 33610</a></li> <!-- Contact address -->
+				</ul>
+			</div>
+			<div class="col-sm-6 col-lg-3 footer-item">
+				<h3>Zoom</h3> <!-- Section title -->
+				<ul class="footer-blog">
+					<li>
+						<a class="img-cover"><img src="assets/img/Zoom-Icon.png" alt="zoom"></a> <!-- Zoom link with image -->
+						<div class="footer-blog-info">
+							<div class="name">Zoom Meeting</div> <!-- Link text and destination -->
+							<p>Meeting ID: 837 3115 9435 <br> Passcode: SQVT3X</p> <!-- Description -->
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="copyright">GPA Pilot</a> © 2024. GPA Pilot. All Rights Reserved.</div> <!-- Copyright text -->
+			<nav class="foot-menu">
+				<ul class="foot-list">
+					<li><a href="home.html">Home</a></li> <!-- Footer navigation links -->
+					<li class="dropdown">
+						<a>Calculators <i class="fa fa-caret-up"></i></a> <!-- Dropdown menu -->
+						<ul>
+							<li><a href="WeightedCalculator.html">Middleton Weighted Calculator</a></li> <!-- Submenu items -->
+							<li><a href="UnweightedCalculator.html">Middleton Unweighted Calculator</a></li>
+							<li class="menu-active"><a href="CollegeCalculator.html">College Calculator</a></li>
+						</ul>
+					</li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+					<li><a href="SignIn.html">Sign In</a></li>
+					<li><a href="SignUp.html">Sign Up</a></li>
+					<li><a href="copyright.html">Copyright Info</a> <!-- Additional footer navigation link -->
+				</ul>
+			</nav>
+		</div>
+	</div>
+</footer>
+<!-- ================ FOOTER END ================ -->
+
+<!-- ================ GPA PILOT AI START================ -->
+    <!-- Button to toggle the chatbot -->
+    <button class="chatbot-toggler">
+		<span class="material-symbols-rounded">CHAT BOT</span> <!-- Text for chatbot button -->
+		<span class="material-symbols-outlined">close</span> <!-- Text for close button -->
+	  </button>
+	  <!-- Chatbot container -->
+	  <div class="chatbot">
+		<header>
+		  <h2>GPA Pilot AI</h2> <!-- Title for chatbot -->
+		  <span class="close-btn material-symbols-outlined">close</span> <!-- Close button for chatbot -->
+		</header>
+		<ul class="chatbox">
+		  <!-- Initial message from chatbot -->
+		  <li class="chat incoming">
+			<span height="100px" > <img src="assets/img/chatimage.jpg" alt="your-image-alt-text"></span> <!-- Image for chatbot -->
+			<p>Hi there, I am GPA Pilot AI.<br>How can I help you today?</p> <!-- Greeting message -->
+		  </li>
+		</ul>
+		<!-- Input area for user to type messages -->
+		<div class="chat-input">
+		  <textarea placeholder="Enter a message..." spellcheck="true" required></textarea> <!-- Textarea for user input -->
+		  <span id="send-btn" class="material-symbols-rounded">send</span> <!-- Button to send messages -->
+		</div>
+	  </div>
+	  <!-- ================ GPA PILOT AI END ================ -->
+
+	<!--=================== SCRIPT	===================-->
+	<script src="assets/js/ChatbotScript.js"></script>
+	<script src="assets/js/jquery-2.2.4.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/isotope.pkgd.js"></script>
+	<script src="assets/js/jquery.fancybox.js"></script>
+	<script src="assets/js/rx-lazy.js"></script>
+	<script src="assets/js/parallax.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>

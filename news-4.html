@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<title>News</title>
+	<!-- =================== META =================== -->
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="assets/img/logo2.png">
+	<!-- =================== STYLE =================== -->
+	<link rel="stylesheet" href="assets/css/ChatbotStyle.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Google Fonts Link For Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+<style> 
+/*Style code for search bar*/
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(https://www.w3schools.com/css/searchicon.png);
+color: black;
+
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 50px;
+}
+</style>
+
+<script>
+	//Search bar
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+</head>
+
+<body id="home">
+	<!--================ PRELOADER ================-->
+	<div class="preloader-cover">
+		<div id="cube-loader">
+			<div class="caption">
+				<div class="cube-loader">
+					<div class="cube loader-1"></div>
+					<div class="cube loader-2"></div>
+					<div class="cube loader-4"></div>
+					<div class="cube loader-3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--============== PRELOADER END ==============-->
+	
+<!-- ================= HEADER ================= -->
+<!-- Start of header section -->
+<header class="header-home">
+	<!-- Navigation button -->
+	<a href="#" class="nav-btn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+	<!-- Top panel -->
+	<div class="top-panel">
+		<div class="container">
+			<div class="row top-panel-row">
+				<!-- Left section of the top panel -->
+				<div class="col-sm-4 top-panel-left">
+					<ul class="header-cont">
+						<!-- Address -->
+						<li><i class="fa fa-map-marker" aria-hidden="true"></i><a>4801 N 22nd St Tampa, FL 33610</a></li>
+					</ul>
+				</div>
+				<!-- Center section of the top panel -->
+				<div class="col-sm-4 top-panel-center">
+					<ul class="header-cont">
+						<!-- Availability Timings -->
+						<li><i class="fa fa-clock-o" aria-hidden="true"></i>Open Sun - Sat: 8:00AM - 7:00PM</li>
+					</ul>
+				</div>
+				<!-- Right section of the top panel -->
+				<div class="col-sm-4 top-panel-right">
+					<ul class="header-cont">
+						<!-- Phone Number -->
+						<li><i class="fa fa-phone" aria-hidden="true"></i><a>813-233-3360</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Header menu -->
+	<div class="header-menu">
+		<div class="container">
+			<!-- Logo -->
+			<div class="header-logo">
+				<a href="home.html" class="logo"><img src="assets/img/logo.png" alt="logo"></a>
+			</div>
+			<!-- Navigation Controls -->
+			<nav class="nav-menu">
+				<ul class="nav-list">
+					<!-- Home -->
+					<li><a href="home.html">Home</a></li>
+					<!-- Calculators Dropdown -->
+					<li class="dropdown">
+						<a>Calculators <i class="fa fa-caret-down"></i></a>
+						<ul>
+							<li><a href="WeightedCalculator.html">Middleton Weighted Calculator</a></li>
+							<li><a href="UnweightedCalculator.html">Middleton Unweighted Calculator</a></li>
+							<li><a href="CollegeCalculator.html">College Calculator</a></li>
+						</ul>
+					</li>
+					<!-- End of Calculators Dropdown -->
+					<!-- Services -->
+					<li><a href="services.html">Services</a></li>
+					<!-- News -->
+					<li class="menu-active"><a href="news.html">News</a></li>
+					<!-- Contacts -->
+					<li><a href="contacts.html">Contacts</a></li>
+					<!-- Sign up and Sign in pages -->
+					<li><a href="SignIn.html">Sign In</a></li>
+                    <li><a href="SignUp.html">Sign Up</a></li>
+					<!-- Copyright Page -->
+					<li><a href="copyright.html">Copyright Info</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<!-- =============== HEADER END =============== -->
+
+	<!-- =============== HEADER-TITLE =============== -->
+	<section class="s-header-title" style="background-image: url(assets/img/bg-1-min.png);">
+		<div class="container">
+			<h1 class="title">News</h1>
+			<ul class="breadcrambs">
+				<li><a href="WeightedCalculator.html">Home</a></li>
+				<li>News</li>
+			</ul>
+		</div>
+	</section>
+	<!-- ============= HEADER-TITLE END ============= -->
+
+	<!--===================== SECTION-NEWS =====================-->
+	<section class="s-news">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-9 blog-cover">
+					<div class="post-item-cover">
+						<div class="post-header">
+						<!-- Subheading -->
+						<h1 class="title">Requirements for colleges (Rankings based on U.S. News & WORLD REPORT only top 25)</h1>
+						</div>
+					</div>
+					<!-- Content Information for University of California, Los Angeles -->
+					<div class="post-item-cover">
+						<div class="post-header">
+							<div class="post-thumbnail">
+								<a target="_blank" href="https://admission.ucla.edu/apply">
+									<img src="assets/img/university-of-california-los-angeles.jpeg" alt="img">
+								</a>
+							</div>
+						</div>
+						<div class="post-content">
+							<h2 class="title"><a target="_blank" href="https://admission.ucla.edu/apply">University of California, Los Angeles</a></h2>
+							<div class="text">
+								<p>This is tied for #15 Best University in the Nation</p>
+							</div>
+						</div>
+					</div>
+					<div class="post-item-cover">
+						<blockquote>
+							<p>"Choosing UCLA meant that I didn’t have to make any compromises. It has awesome academics, vibrant student life, amazing professional and personal resources, and a beautiful campus — everything I could hope to have as part of my college experience.</p>
+							<cite>by Connor Ching, statistics major, digital humanities and entrepreneurship minors</a></cite>
+						</blockquote>
+					</div>
+					<!-- Content Information for Rice University -->
+					 <div class="post-item-cover">
+						<div class="post-header">
+							<div class="post-thumbnail">
+								<a target="_blank" href="https://admission.rice.edu/apply/first-year-domestic-applicants">
+									<img src="assets/img/rice-university.jpeg" alt="img">
+								</a>
+							</div>
+						</div>
+						<div class="post-content">
+							<h2 class="title"><a target="_blank" href="https://admission.rice.edu/apply/first-year-domestic-applicants">Rice University</a></h2>
+							<div class="text">
+								<p>This is tied for #17 Best University in the Nation</p>
+							</div>
+						</div>
+					</div>
+					<!-- Content Information for Dartmouth College -->
+					<div class="post-item-cover">
+						<div class="post-header">
+							<div class="post-thumbnail">
+								<a target="_blank" href="https://admissions.dartmouth.edu/glossary-question/does-dartmouth-require-specific-high-school-courses">
+									<img src="assets/img/dartmouth-college.jpeg" alt="img">
+								</a>
+							</div>
+						</div>
+						<div class="post-content">
+							<h2 class="title"><a target="_blank" href="https://admissions.dartmouth.edu/glossary-question/does-dartmouth-require-specific-high-school-courses">Dartmouth College</a></h2>
+							<div class="text">
+								<p>This is tied for #18 Best University in the Nation</p>
+							</div>
+						</div>
+					</div>
+					<div class="post-item-cover">
+						<blockquote>
+							<p>"I was excited to find that Dartmouth is a very vibrant quilt. There's no 'typical' to compare yourself against. Our curiosity and our humanity are what bind us. We connect to one another with open hearts."</p>
+							<cite>by —Lawrence Abu-Hammour '19</a></cite>
+						</blockquote>
+					</div>
+					<!-- Content Information for Vanderbilt University -->
+					<div class="post-item-cover">
+						<div class="post-header">
+							<div class="post-thumbnail">
+								<a target="_blank" href="https://admissions.vanderbilt.edu/apply/first-year-process/">
+									<img src="assets/img/vanderbilt-university.jpeg" alt="img">
+								</a>
+							</div>
+						</div>
+						<div class="post-content">
+							<h2 class="title"><a target="_blank" href="https://admissions.vanderbilt.edu/apply/first-year-process/">Vanderbilt University</a></h2>
+							<div class="text">
+								<p>This is tied for #18 Best University in the Nation</p>
+							</div>
+						</div>
+					</div>
+					<div class="post-item-cover">
+						<blockquote>
+							<p>“Universities such as ours exist because of an unshakable belief in human potential. We must do whatever it takes to create an environment in which all members of our community can thrive and contribute to their full potential.”</p>
+							<cite>by Daniel Diermeier</a></cite>
+						</blockquote>
+					</div>
+					<!-- Content Information for University of Notre Dame -->
+					<div class="post-item-cover">
+						<div class="post-header">
+							<div class="post-thumbnail">
+								<a target="_blank" href="https://admissions.nd.edu/apply/evaluation-criteria/">
+									<img src="assets/img/university-of-notre-dame.jpeg" alt="img">
+								</a>
+							</div>
+						</div>
+						<div class="post-content">
+							<h2 class="title"><a target="_blank" href="https://admissions.nd.edu/apply/evaluation-criteria/">University of Notre Dame</a></h2>
+							<div class="text">
+								<p>This is the #20 Best University in the Nation</p>
+							</div>
+						</div>
+					</div>
+					<div class="post-item-cover">
+					</div>
+					<!-- Page Selection -->
+					<div class="pagination-cover">
+						<ul class="pagination">
+							<li class="pagination-item item-prev"><a href="news-3.html"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+							<li class="pagination-item"><a href="news.html">1</a></li>
+							<li class="pagination-item"><a href="news-2.html">2</a></li>
+							<li class="pagination-item"><a href="news-3.html">3</a></li>
+							<li class="pagination-item active"><a href="news-4.html">4</a></li>
+							<li class="pagination-item"><a href="news-5.html">5</a></li>
+							<li class="pagination-item item-next"><a href="news-5.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!--================= SIDEBAR =================-->
+				<div class="col-12 col-lg-3 sidebar">
+					<a href="#" class="btn btn-sidebar"><span>Search Bar</span></a>
+					<ul class="widgets">
+						<!--=========== WIDGET-SEARCH ===========-->
+						<li class="widget widget-search">
+							<h3>Search for a college (Top 25)</h3>
+							<form>
+							<input type="text"  id="myInput" class="icon" onkeyup="myFunction()" placeholder="Search for college...">
+							<ul id="myUL">
+								<!-- TOP 25 COLLEGES -->
+								<li><a target="_blank" href="https://admission.princeton.edu/apply/before-you-apply">Princeton University</a></li>
+								<li><a target="_blank" href="https://mitadmissions.org/apply/transfer/before-applying/">Massachusetts Institute of Technology</a></li>
+								<li><a target="_blank" href="https://extension.harvard.edu/registration-admissions/for-students/student-policies-conduct/academic-standing-and-student-conduct-requirements-for-degree-programs/">Harvard University</a></li>
+								<li><a target="_blank" href="https://admission.stanford.edu/apply/first-year/home.html">Stanford University</a></li>
+								<li><a target="_blank" href="https://admissions.yale.edu/what-yale-looks-for">Yale University</a></li>
+								<li><a target="_blank" href="https://admissions.upenn.edu/how-to-apply/what-penn-looks-for">University of Pennsylvania</a></li>
+								<li><a target="_blank" href="https://www.admissions.caltech.edu/apply/what-we-look-for">California Institute of Technology</a></li>
+								<li><a target="_blank" href="https://advising.duke.edu/prehealth/prepare/gpa-metrics/">Duke University</a></li>
+								<li><a target="_blank" href="https://admission.brown.edu/transfer/application-checklist">Brown University</a></li>
+								<li><a target="_blank" href="https://publichealth.jhu.edu/academics/mph/requirements">Johns Hopkins University</a></li>
+								<li><a target="_blank" href="https://www.northwestern.edu/admissions/">Northwestern University</a></li>
+								<li><a target="_blank" href="https://undergrad.admissions.columbia.edu/apply/firstyear">Columbia University</a></li>
+								<li><a target="_blank" href="https://admissions.cornell.edu/how-to-apply">Cornell University</a></li>
+								<li><a target="_blank" href="https://collegeadmissions.uchicago.edu/apply">University of Chicago</a></li>
+								<li><a target="_blank" href="https://admissions.berkeley.edu/apply-to-berkeley/">University of California, Berkeley</a></li>
+								<li><a target="_blank" href="https://admission.rice.edu/apply/first-year-domestic-applicants">Rice University</a></li>
+								<li><a target="_blank" href="https://admission.ucla.edu/apply">University of California, Los Angeles</a></li>
+								<li><a target="_blank" href="https://admissions.dartmouth.edu/glossary-question/does-dartmouth-require-specific-high-school-courses">Dartmouth College</a></li>
+								<li><a target="_blank" href="https://admissions.vanderbilt.edu/apply/first-year-process/">Vanderbilt University</a></li>
+								<li><a target="_blank" href="https://admissions.nd.edu/apply/evaluation-criteria/">University of Notre Dame</a></li>
+								<li><a target="_blank" href="https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines">University of Michigan-Ann Arbor</a></li>
+								<li><a target="_blank" href="https://uadmissions.georgetown.edu/applying/first-year-application/">Georgetown University</a></li>
+								<li><a target="_blank" href="https://www.med.unc.edu/admit/requirements/admissions-process/">University of North Carolina at Chapel Hill</a></li>
+								<li><a target="_blank" href="https://www.cmu.edu/admission/admission/undergraduate-admission-requirements">Carnegie Mellon University</a></li>
+								<li><a target="_blank" href="https://apply.emory.edu/apply/first-year/home.html">Emory University</a></li>
+							</ul>
+							</form>
+						</li>
+						<!--======== WIDGET-NEWSLETTER END ========-->
+					</ul>
+				</div>
+				<!--=============== SIDEBAR END ===============-->
+			</div>
+		</div>
+	</section>
+	<!--=================== SECTION-NEWS END ===================-->
+
+<!-- ================== FOOTER ================== -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-lg-3 footer-item-logo">
+				<a href="home.html" class="logo-footer"><img src="assets/img/logo.png" alt="logo"></a>
+				<p>GPA Pilot: Your ticket to academic success.</p> <!-- Footer logo and description -->
+			</div>
+			<div class="col-sm-6 col-lg-3 footer-item footer-item-list">
+				<h3>Emails</h3> <!-- Section title -->
+				<ul class="footer-link">
+					<li><a>Tejaswi Mittadoddi Personal Email: mtejas118@gmail.com</a></li> 
+					<li><a>Saket Bonu Personal Email: bonusaket@gmail.com</a></li>
+					<li><a>Rhea Rachala Personal Email: rhearachala@gmail.com</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6 col-lg-3 footer-item">
+				<h3>Contact us</h3> <!-- Section title -->
+				<ul class="footer-cont">
+					<li><i class="fa fa-phone" aria-hidden="true"></i><a>813-233-3360</a></li> <!-- Contact phone number -->
+					<li><i class="fa fa-envelope" aria-hidden="true"></i><a target="_blank" >gpapilot2024@gmail.com</a></li> <!-- Contact email -->
+					<li><i class="fa fa-map-marker" aria-hidden="true"></i><a>4801 N 22nd St Tampa, FL 33610</a></li> <!-- Contact address -->
+				</ul>
+			</div>
+			<div class="col-sm-6 col-lg-3 footer-item">
+				<h3>Zoom</h3> <!-- Section title -->
+				<ul class="footer-blog">
+					<li>
+						<a class="img-cover"><img src="assets/img/Zoom-Icon.png" alt="zoom"></a> <!-- Zoom link with image -->
+						<div class="footer-blog-info">
+							<div class="name">Zoom Meeting</div> <!-- Link text and destination -->
+							<p>Meeting ID: 837 3115 9435 <br> Passcode: SQVT3X</p> <!-- Description -->
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="copyright">GPA Pilot</a> © 2024. GPA Pilot. All Rights Reserved.</div> <!-- Copyright text -->
+			<nav class="foot-menu">
+				<ul class="foot-list">
+					<li><a href="home.html">Home</a></li> <!-- Footer navigation links -->
+					<li class="dropdown">
+						<a>Calculators <i class="fa fa-caret-up"></i></a> <!-- Dropdown menu -->
+						<ul>
+							<li><a href="WeightedCalculator.html">Middleton Weighted Calculator</a></li> <!-- Submenu items -->
+							<li><a href="UnweightedCalculator.html">Middleton Unweighted Calculator</a></li>
+							<li><a href="CollegeCalculator.html">College Calculator</a></li>
+						</ul>
+					</li>
+					<li><a href="services.html">Services</a></li>
+					<li class="menu-active"><a href="news.html">News</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+					<li><a href="SignIn.html">Sign In</a></li>
+					<li><a href="SignUp.html">Sign Up</a></li>
+					<li><a href="copyright.html">Copyright Info</a> <!-- Additional footer navigation link -->
+				</ul>
+			</nav>
+		</div>
+	</div>
+</footer>
+<!-- ================ FOOTER END ================ -->
+	<!-- ================ GPA PILOT AI START================ -->
+    <button class="chatbot-toggler">
+		<span class="material-symbols-rounded">CHAT BOT</span>
+		<span class="material-symbols-outlined">close</span>
+	  </button>
+	  <div class="chatbot">
+		<header>
+		  <h2>GPA Pilot AI</h2>
+		  <span class="close-btn material-symbols-outlined">close</span>
+		</header>
+		<ul class="chatbox">
+		  <li class="chat incoming">
+			<span height="100px" > <img src="assets/img/chatimage.jpg" alt="your-image-alt-text"></span>
+			<p>Hi there, I am GPA Pilot AI.<br>How can I help you today?</p>
+		  </li>
+		</ul>
+		<div class="chat-input">
+		  <textarea placeholder="Enter a message..." spellcheck="true" required></textarea>
+		  <span id="send-btn" class="material-symbols-rounded">send</span>
+		</div>
+	  </div>
+	  <!-- ================ GPA PILOT AI END ================ -->
+	<!--=================== SCRIPT	===================-->
+	<script src="assets/js/ChatbotScript.js"></script>
+	<script src="assets/js/jquery-2.2.4.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>
